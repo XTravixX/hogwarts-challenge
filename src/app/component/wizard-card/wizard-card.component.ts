@@ -6,12 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./wizard-card.component.css']
 })
 export class WizardCardComponent implements OnInit {
-  @Input()wizard = {
-    name: "Harry Potter",
-    patronus: "stag",
-    image: "http://hp-api.herokuapp.com/images/draco.jpg",
-    yearOfBirth: "1980"
-  };
+  @Input()wizard: any
   age = 0;
   constructor() {}
 

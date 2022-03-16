@@ -1,1 +1,11 @@
-<students></students>
+
+<div class="app">
+  <mat-card class="menu">
+    <button mat-button routerLink="houses" routerLinkActive="active">Houses</button>  
+    <button mat-button routerLink="students" routerLinkActive="active">Students</button>  
+    <button mat-button routerLink="staff" routerLinkActive="active">Staff</button> 
+    <button mat-button routerLink="request" routerLinkActive="active">Request</button> 
+  </mat-card>
+
+  <router-outlet></router-outlet>
+</div>

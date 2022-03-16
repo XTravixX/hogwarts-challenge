@@ -1,4 +1,4 @@
-<mat-form-field appearance="fill">
+<mat-form-field  class="input" appearance="fill">
   <mat-label>Casas</mat-label>
   <mat-select required (selectionChange)="getWizardsByHouse($event.value)">
     <mat-option  *ngFor="let house of houses" [value]="house">{{house}}</mat-option>
@@ -7,7 +7,7 @@
 
 
 <div *ngIf="loading; else elseBlock">
-  <mat-spinner diameter="50"></mat-spinner>
+  <mat-spinner class="center" diameter="50"></mat-spinner>
 </div>
 
 

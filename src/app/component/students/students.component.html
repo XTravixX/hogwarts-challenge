@@ -1,10 +1,10 @@
-<mat-form-field class="example-full-width" appearance="fill">
-  <mat-label>Student name</mat-label>
+<mat-form-field class="input" appearance="fill">
+  <mat-label>Nombre del estudiante</mat-label>
   <input matInput placeholder="Ron" (change)="inputOnChange($event)">
 </mat-form-field>
 
 <div *ngIf="loading; else elseBlock">
-  <mat-spinner diameter="50"></mat-spinner>
+  <mat-spinner class="center" diameter="50"></mat-spinner>
 </div>
 
 <ng-template #elseBlock>

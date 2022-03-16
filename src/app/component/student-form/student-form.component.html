@@ -1,0 +1,30 @@
+<mat-card class="student-form">
+  <mat-card-title>Formulario de Solicitud Ingreso</mat-card-title>
+
+  <mat-form-field class="input" appearance="fill">
+    <mat-label>Nombre</mat-label>
+    <input id="name" matInput type="text" [formControl]="name" />
+  </mat-form-field>
+
+  <br/>
+
+  <mat-form-field class="input" appearance="fill">
+    <mat-label>Año de Nacimiento</mat-label>
+    <input id="yearOfBirth" matInput type="text" [formControl]="yearOfBirth" />
+  </mat-form-field>
+
+  <mat-card-actions>
+    <button mat-raised-button color="primary"  (click)="sendRequestWizard()">Solicitud</button>
+  </mat-card-actions>
+</mat-card>
+
+
+<h1 class="mat-display-1">Listado de Solicitudes</h1>
+
+<mat-card class="request-card" *ngFor="let wizard of requests">
+  <mat-card-title-group>
+    <mat-card-title>{{ wizard.name }}</mat-card-title>
+    <mat-card-subtitle>Fecha de nacimiento: {{ wizard.yearOfBirth }}</mat-card-subtitle>
+  </mat-card-title-group>
+</mat-card>
+

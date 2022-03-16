@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { ReactiveFormsModule } from "@angular/forms";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WizardCardComponent } from './component/wizard-card/wizard-card.component';
+
 // Material Form Controls
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatCheckboxModule } from '@angular/material/checkbox';
@@ -50,6 +52,7 @@ import { WizardListComponent } from './component/wizard-list/wizard-list.compone
 import { HouseComponent } from './component/house/house.component';
 import { StaffComponent } from './component/staff/staff.component';
 import { StudentsComponent } from './component/students/students.component';
+import { StudentFormComponent } from './component/student-form/student-form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,11 +61,13 @@ import { StudentsComponent } from './component/students/students.component';
     HouseComponent,
     StaffComponent,
     StudentsComponent,
+    StudentFormComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     // Material components
     MatAutocompleteModule,
     MatCheckboxModule,
@@ -98,7 +103,7 @@ import { StudentsComponent } from './component/students/students.component';
     MatTooltipModule,
     MatPaginatorModule,
     MatSortModule,
-    MatTableModule
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
