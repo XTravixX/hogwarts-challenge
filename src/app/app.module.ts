@@ -48,12 +48,14 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { WizardListComponent } from './component/wizard-list/wizard-list.component';
 import { HouseComponent } from './component/house/house.component';
+import { StaffComponent } from './component/staff/staff.component';
 @NgModule({
   declarations: [
     AppComponent,
     WizardCardComponent,
     WizardListComponent,
     HouseComponent,
+    StaffComponent,
   ],
   imports: [
     BrowserModule,

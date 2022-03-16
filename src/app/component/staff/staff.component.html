@@ -1,0 +1,13 @@
+<mat-form-field class="example-full-width" appearance="fill">
+  <mat-label>Staff name</mat-label>
+  <input matInput placeholder="Snape" (change)="inputOnChange($event)">
+</mat-form-field>
+
+<div *ngIf="loading; else elseBlock">
+  <mat-spinner diameter="50"></mat-spinner>
+</div>
+
+
+<ng-template #elseBlock>
+  <wizard-list #elseBlock [wizards]="staffFiltered"></wizard-list>
+</ng-template>
