@@ -1,0 +1,8 @@
+.wizard-card {
+  display: flex;
+  max-width: 250px;
+}
+
+.wizard-card mat-card-title-group {
+  margin-left: 10px;
+}
