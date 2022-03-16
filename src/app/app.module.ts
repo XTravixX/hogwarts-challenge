@@ -49,6 +49,7 @@ import { MatTableModule } from '@angular/material/table';
 import { WizardListComponent } from './component/wizard-list/wizard-list.component';
 import { HouseComponent } from './component/house/house.component';
 import { StaffComponent } from './component/staff/staff.component';
+import { StudentsComponent } from './component/students/students.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,6 +57,7 @@ import { StaffComponent } from './component/staff/staff.component';
     WizardListComponent,
     HouseComponent,
     StaffComponent,
+    StudentsComponent,
   ],
   imports: [
     BrowserModule,
